@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3b8dff, #73bdfc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header */
+h2 {
+    color: #1d3557;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Login Card */
+.login-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-button {
+    width: 100%;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #457b9d, #1d3557);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Calculator */
+.calculator {
+    margin-top: 20px;
+}
+
+.display input {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #4a90e2, #357bb7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.operator {
+    background: linear-gradient(135deg, #72a6f9, #4178b6);
+}
+
+.btn.equals {
+    background: linear-gradient(135deg, #2c82c9, #1d3b7b);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history h3 {
+    font-size: 1.2rem;
+    color: #1d3557;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history ul li {
+    font-size: 1rem;
+    color: #444;
+    padding: 5px;
+    background: #f0f7ff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Electricity Bill */
+.electricity-bill form {
+    margin-top: 20px;
+}
+
+.electricity-bill .form-group {
+    text-align: left;
+}
+
+.electricity-bill input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.bill-button {
+    margin-top: 10px;
+    background: linear-gradient(135deg, #3b8dff, #1d3b7b);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bill-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Slider */
+.slider-container {
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#prevBtn {
+    left: -50px;
+}
+
+#nextBtn {
+    right: -50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
